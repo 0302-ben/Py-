@@ -475,7 +475,7 @@ ttk.Label(frame_total, textvariable=expense_total_var).pack(side=tk.LEFT, padx=5
 ttk.Label(frame_total, textvariable=net_asset_var).pack(side=tk.LEFT, padx=5)
 
 # Gemini 建議按鈕
-btn_gemini = ttk.Button(root, text="取得 Gemini 理財建議", command=get_financial_advice)
+btn_gemini = ttk.Button(root, text=" Gemini理財建議", command=get_financial_advice)
 btn_gemini.pack(pady=5)
 
 # 預算分析按鈕
@@ -509,7 +509,7 @@ def ask_budget_and_send():
 
     tk.Button(budget_win, text="執行分析", command=confirm).grid(row=3, columnspan=2, pady=10)
 
-btn_budget = ttk.Button(root, text="📈 本月預算分析與寄信", command=ask_budget_and_send)
+btn_budget = ttk.Button(root, text="📈 本月預算分析", command=ask_budget_and_send)
 btn_budget.pack(pady=5)
 
 def send_monthly_report_via_email(to_email):
